@@ -18,8 +18,8 @@ mvn exec:java -Dexec.mainClass=com.example.tictactoe.MainApplication
 
 ## **2) Конвертер валют**
 Для сборки необходимы версии: 
--Java 17 
--Maven 3.8.1.
+- Java 17 
+- Maven 3.8.1.
 Чтобы выполнить компиляцию и запуск программы, нужно в директории с файлом pom.xml выполнить следующие команды:
 ```shell
 mvn dependency:resolve
