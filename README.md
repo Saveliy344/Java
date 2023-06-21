@@ -21,7 +21,7 @@ mvn exec:java -Dexec.mainClass=com.example.tictactoe.MainApplication
 - Java 17 
 - Maven 3.8.1
 
-Чтобы выполнить компиляцию и запуск программы, нужно в директории с файлом pom.xml выполнить следующие команды:
+Чтобы выполнить компиляцию и запуск программы, нужно в директории с файлом `pom.xml` выполнить следующие команды:
 
 ```shell
 mvn dependency:resolve
