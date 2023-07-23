@@ -28,8 +28,14 @@ mvn dependency:resolve
 mvn clean compile
 mvn exec:java -Dexec.mainClass=com.example.exchangerapp.ExchangerApplication
 ```
-## **3) Spring-приложение Библиотека**
+## **3) Spring-приложение Библиотека (JDBCTemplate)**
 
 - ТЗ представлено в папке `SpringMVC`
-- Для запуска приложения используется артефакт `Web Application: Exploded`
 - Необходимо изменить файл `src/main/webapp/resources/database.properties.origin`: удалить `.origin` из названия файла и настроить параметры базы данных (используется `postgresql`)
+-Данные для настройки базы:  таблица Person(id - int, primary key, autoincrement; name - varchar , birthyear - int > 0) , таблица Book(id - int, primary key, autoincrement; name - varchar; year - int  > 0; author - varchar; readerId - int references Person(id) OnDelete = setnull))
+
+## **4) Spring-приложение Библиотека (Hibernate + JPA)**
+
+- ТЗ представлено в папке `SpringJPA`
+- Необходимо изменить файл `src/main/webapp/resources/hibernate.properties.origin`: удалить `.origin` из названия файла и настроить параметры базы данных (используется `postgresql`)
+-Данные для настройки базы:  таблица Person(id - int, primary key, autoincrement; name - varchar , birthyear - int > 0) , таблица Book(id - int, primary key, autoincrement; name - varchar; year - int  > 0; author - varchar; taken - timestamp, readerId - int references Person(id) OnDelete = setnull))
