@@ -1,41 +1,13 @@
-# Java
+Данный репозиторий содержит pet-проекты ( в папке Java - проекты, написанные на Java) и сертификаты некоторых курсов (расположены в папке Certificates) . В папке с каждым проектом содержится файл README.md, в котором указана инструкция по запуску и настройке проекта.
 
-Список проектов Java:
-
+Список проектов:
 ## **1) Крестики-нолики**
-
-Для сборки необходимы следующие версии:
-- Java 17
-- Maven 3.8.1
-
-Чтобы выполнить компиляцию и запуск программы, выполните следующие команды в директории с файлом `pom.xml`:
-
-```shell
-mvn dependency:resolve
-mvn clean compile
-mvn exec:java -Dexec.mainClass=com.example.tictactoe.MainApplication
-```
-
+Директория: Java/Tic-tac-toe.
 ## **2) Конвертер валют**
-Для сборки необходимы версии: 
-- Java 17 
-- Maven 3.8.1
-
-Чтобы выполнить компиляцию и запуск программы, нужно в директории с файлом `pom.xml` выполнить следующие команды:
-
-```shell
-mvn dependency:resolve
-mvn clean compile
-mvn exec:java -Dexec.mainClass=com.example.exchangerapp.ExchangerApplication
-```
+Директория: Java/ExchangerApp.
 ## **3) Spring-приложение Библиотека (JDBCTemplate)**
-
-- ТЗ представлено в папке `SpringMVC`
-- Необходимо изменить файл `src/main/webapp/resources/database.properties.origin`: удалить `.origin` из названия файла и настроить параметры базы данных (используется `postgresql`)
--Данные для настройки базы:  таблица Person(id - int, primary key, autoincrement; name - varchar , birthyear - int > 0) , таблица Book(id - int, primary key, autoincrement; name - varchar; year - int  > 0; author - varchar; readerId - int references Person(id) OnDelete = setnull))
-
+Директория: Java/Spring projects/SpringMVC. ТЗ представлено в файле Project1_TZ.pdf в этой же директории.
 ## **4) Spring-приложение Библиотека (Hibernate + JPA)**
-
-- ТЗ представлено в папке `SpringJPA`
-- Необходимо изменить файл `src/main/webapp/resources/hibernate.properties.origin`: удалить `.origin` из названия файла и настроить параметры базы данных (используется `postgresql`)
--Данные для настройки базы:  таблица Person(id - int, primary key, autoincrement; name - varchar , birthyear - int > 0) , таблица Book(id - int, primary key, autoincrement; name - varchar; year - int  > 0; author - varchar; taken - timestamp, readerId - int references Person(id) OnDelete = setnull))
+Директория: Java/Spring projects/SpringJPA. ТЗ представлено в файле Project2_TZ.pdf в этой же директории.
+## **5) Spring-приложение Датчик погоды (REST)**
+Директория: Java/Spring projects/SpringREST. ТЗ представлено в файле Project3_TZ.pdf в этой же директории.
