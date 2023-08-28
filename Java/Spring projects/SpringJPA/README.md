@@ -19,4 +19,4 @@ CREATE TABLE Book
     taken timestamp,
     readerId INT references Person (id) ON DELETE SET NULL
 );
--Для запуска понадобится дополнительный сервер (например, Tomcat 9-й версии)
+- Для запуска понадобится дополнительный сервер (например, Tomcat 9-й версии)
