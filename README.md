@@ -11,3 +11,5 @@
 Директория: Java/Spring projects/SpringJPA. ТЗ представлено в файле Project2_TZ.pdf в этой же директории.
 ## **5) Spring-приложение Датчик погоды (REST)**
 Директория: Java/Spring projects/SpringREST. ТЗ представлено в файле Project3_TZ.pdf в этой же директории.
+## **5) Spring-приложение для работы с директориями и файлами**
+Директория: Java/Spring projects/DirsAndFiles. ТЗ представлено в файле TZ.pdf в этой же директории.
